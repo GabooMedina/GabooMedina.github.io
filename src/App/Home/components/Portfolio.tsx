@@ -38,7 +38,7 @@ const Portfolio: React.FC = () => {
       title: "SaaS VetControl",
       description:
         "A comprehensive admin dashboard for online stores with real-time analytics and inventory management.",
-      image: "/src/assets/projects/sasVetControl.png",
+      image: "/assets/projects/sasVetControl.png",
       category: "web",
       technologies: ["React", "TypeScript", "PostgreSQL", "Chart.js"],
       link: "https://example.com/project1",
@@ -50,7 +50,7 @@ const Portfolio: React.FC = () => {
       title: "Cracks App",
       description:
         "Mobile app for managing football tournaments, featuring team and player administration, match calendar, real-time results, standings tables, and push notifications",
-      image: "/src/assets/projects/cracksMovil.png",
+      image: "/assets/projects/cracksMovil.png",
       category: "mobile",
       technologies: ["Ionic", "Firebase", "Typescript"],
       link: "https://example.com/project2",
@@ -62,7 +62,7 @@ const Portfolio: React.FC = () => {
       title: "Junta de Agua Potable Santa Rosa",
       description:
         "Web system for managing water billing and administration for the Santa Rosa Water Board, including clients, invoices, consumption, branches, and users.",
-      image: "/src/assets/projects/junta-agua.png",
+      image: "/assets/projects/junta-agua.png",
       category: "web",
       technologies: ["React", "TypeScript", "Tailwind CSS", "PostgreSQL"],
       link: "https://junta-de-agua.vercel.app/login",
@@ -74,7 +74,7 @@ const Portfolio: React.FC = () => {
       title: "Celula Académica FISEI",
       description:
         "Educational platform for FISEI-UTA featuring event registration, activity calendar, event information, event management, and faculty news updates.",
-      image: "/src/assets/projects/celulaAcademica.png",
+      image: "/assets/projects/celulaAcademica.png",
       category: "web",
       technologies: ["React", "JavaScript", "Django", "PostgreSQL", "Tailwind CSS"],
       link: "https://front-celula-academica.vercel.app/",
@@ -86,7 +86,7 @@ const Portfolio: React.FC = () => {
       title: "EcuaBus App",
       description:
         "Mobile solution for managing bus routes, drivers, and ticket sales in transport cooperatives. It integrates a centralized server with an APK-based app for admins, staff, and passengers.",
-      image: "/src/assets/projects/ecuabus.png",
+      image: "/assets/projects/ecuabus.png",
       category: "mobile",
       technologies: ["Ionic", "Typescript", "Firebase"],
       link: "",
@@ -98,7 +98,7 @@ const Portfolio: React.FC = () => {
       title: "Aplicación Administrativa FITME",
       description:
         "Web nutritional analysis system that enables detailed tracking of calorie intake, statistical reports by day/week/month/year, progress and trend visualization, and personalized alerts based on goals.",
-      image: "/src/assets/projects/fitme.png",
+      image: "/assets/projects/fitme.png",
       category: "web",
       technologies: ["PHP", "Bootsrap", "MySQL", "HTML", "CSS"],
       link: "https://example.com/project1",
@@ -110,7 +110,7 @@ const Portfolio: React.FC = () => {
       title: "BusGo",
       description:
         "BusGo is a desktop application for bus terminals that enables digital ticket sales, route and schedule management, seat availability control, and daily reporting.",
-      image: "/src/assets/projects/busGo.png",
+      image: "/assets/projects/busGo.png",
       category: "other",
       technologies: ["Java","MySQL"],
       link: "https://example.com/project1",
@@ -122,7 +122,7 @@ const Portfolio: React.FC = () => {
       title: "PetVision",
       description:
         "Real-time dog and cat image classifier using TensorFlow.js, fully running in the browser. Just point your phone camera at a pet (real or photo), powered by a model trained in Python with TensorFlow",
-      image: "/src/assets/projects/petVision.png",
+      image: "/assets/projects/petVision.png",
       category: "ia",
       technologies: ["Python","TensorFlow", "OpenCV"],
       link: "https://ringa-tech.com/exportacion/perros-gatos/",

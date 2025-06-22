@@ -1,4 +1,3 @@
-import { useState, FormEvent } from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -31,15 +30,6 @@ const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export default function Footer() {
-  const [email, setEmail] = useState<string>("");
-  const [subscribed, setSubscribed] = useState<boolean>(false);
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    setSubscribed(true);
-    setEmail("");
-    setTimeout(() => setSubscribed(false), 3000);
-  };
 
   const currentYear = new Date().getFullYear();
 
@@ -105,7 +95,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <span className="mr-2 flex items-center">
                   <img
-                    src="/src/assets/ecuador.png"
+                    src="/assets/projects/ecuador.png"
                     alt="Bandera de Ecuador"
                     className="w-5 h-5"
                   />

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaJs } from 'react-icons/fa';
 import { FaUniversity } from 'react-icons/fa';
-import PythonLogo from '../../../assets/svg/python-logo-only.svg';
+import PythonLogo from '../../../../public/assets/svg/python-logo-only.svg';
 import certificadoPython from "/src/assets/certificates/certificadoPython.png";
 
 

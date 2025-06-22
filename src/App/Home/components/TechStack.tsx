@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface TechSkill {
   id: number;
@@ -28,54 +28,54 @@ const TechStack = () => {
 
   const techSkills: TechSkill[] = [
     // Frontend
-    { id: 1, name: "React", icon: "/src/assets/svg/react-original.svg", category: "frontend", proficiency: 5 },
-    { id: 2, name: "TypeScript", icon: "/src/assets/svg/typescript-original.svg", category: "frontend", proficiency: 4 },
-    { id: 3, name: "JavaScript", icon: "/src/assets/svg/javascript-original.svg", category: "frontend", proficiency: 5 },
-    { id: 4, name: "HTML5", icon: "/src/assets/svg/html5-original.svg", category: "frontend", proficiency: 5 },
-    { id: 5, name: "CSS3", icon: "/src/assets/svg/css3-original.svg", category: "frontend", proficiency: 4 },
-    { id: 6, name: "Tailwind CSS", icon: "/src/assets/svg/tailwindcss-original.svg", category: "frontend", proficiency: 5 },
-    { id: 7, name: "Next.js", icon: "/src/assets/svg/nextjs-original.svg", category: "frontend", proficiency: 4 },
-    { id: 8, name: "Angular", icon: "/src/assets/svg/angular-original.svg", category: "frontend", proficiency: 4 },
+    { id: 1, name: "React", icon: "/assets/svg/react-original.svg", category: "frontend", proficiency: 5 },
+    { id: 2, name: "TypeScript", icon: "/assets/svg/typescript-original.svg", category: "frontend", proficiency: 4 },
+    { id: 3, name: "JavaScript", icon: "/assets/svg/javascript-original.svg", category: "frontend", proficiency: 5 },
+    { id: 4, name: "HTML5", icon: "/assets/svg/html5-original.svg", category: "frontend", proficiency: 5 },
+    { id: 5, name: "CSS3", icon: "/assets/svg/css3-original.svg", category: "frontend", proficiency: 4 },
+    { id: 6, name: "Tailwind CSS", icon: "/assets/svg/tailwindcss-original.svg", category: "frontend", proficiency: 5 },
+    { id: 7, name: "Next.js", icon: "/assets/svg/nextjs-original.svg", category: "frontend", proficiency: 4 },
+    { id: 8, name: "Angular", icon: "/assets/svg/angular-original.svg", category: "frontend", proficiency: 4 },
 
     // Backend
-    { id: 9, name: "Java", icon: "/src/assets/svg/java-original.svg", category: "backend", proficiency: 4 },
-    { id: 10, name: "PHP", icon: "/src/assets/svg/php-original.svg", category: "backend", proficiency: 4 },
-    { id: 11, name: "Python", icon: "/src/assets/svg/python-logo-only.svg", category: "backend", proficiency: 3 },
-    { id: 12, name: "Laravel", icon: "/src/assets/svg/laravel-original.svg", category: "backend", proficiency: 3 },
-    { id: 13, name: "Spring Boot", icon: "/src/assets/svg/spring-original.svg", category: "backend", proficiency: 4 },
-    { id: 14, name: "Node JS", icon: "/src/assets/svg/nodejs-original.svg", category: "backend", proficiency: 4 },
-    { id: 15, name: "Nest JS", icon: "/src/assets/svg/nestjs-original.svg", category: "backend", proficiency: 4 },
-    { id: 16, name: "Django", icon: "/src/assets/svg/django-plain.svg", category: "backend", proficiency: 4 },
+    { id: 9, name: "Java", icon: "/assets/svg/java-original.svg", category: "backend", proficiency: 4 },
+    { id: 10, name: "PHP", icon: "/assets/svg/php-original.svg", category: "backend", proficiency: 4 },
+    { id: 11, name: "Python", icon: "/assets/svg/python-logo-only.svg", category: "backend", proficiency: 3 },
+    { id: 12, name: "Laravel", icon: "/assets/svg/laravel-original.svg", category: "backend", proficiency: 3 },
+    { id: 13, name: "Spring Boot", icon: "/assets/svg/spring-original.svg", category: "backend", proficiency: 4 },
+    { id: 14, name: "Node JS", icon: "/assets/svg/nodejs-original.svg", category: "backend", proficiency: 4 },
+    { id: 15, name: "Nest JS", icon: "/assets/svg/nestjs-original.svg", category: "backend", proficiency: 4 },
+    { id: 16, name: "Django", icon: "/assets/svg/django-plain.svg", category: "backend", proficiency: 4 },
 
     //Databases
-    { id: 17, name: "Mongo DB", icon: "/src/assets/svg/mongodb-original.svg", category: "database", proficiency: 4 },
-    { id: 18, name: "MySQL", icon: "/src/assets/svg/mysql-original.svg", category: "database", proficiency: 4 },
-    { id: 19, name: "PostgreSQL", icon: "/src/assets/svg/postgresql-original.svg", category: "database", proficiency: 4 },
-    { id: 20, name: "FireBase", icon: "/src/assets/svg/firebase-original.svg", category: "database", proficiency: 4 },
-    { id: 21, name: "SQLite", icon: "/src/assets/svg/sqlite-original.svg", category: "database", proficiency: 4 },
+    { id: 17, name: "Mongo DB", icon: "/assets/svg/mongodb-original.svg", category: "database", proficiency: 4 },
+    { id: 18, name: "MySQL", icon: "/assets/svg/mysql-original.svg", category: "database", proficiency: 4 },
+    { id: 19, name: "PostgreSQL", icon: "/assets/svg/postgresql-original.svg", category: "database", proficiency: 4 },
+    { id: 20, name: "FireBase", icon: "/assets/svg/firebase-original.svg", category: "database", proficiency: 4 },
+    { id: 21, name: "SQLite", icon: "/assets/svg/sqlite-original.svg", category: "database", proficiency: 4 },
 
     // Mobile
-    { id: 22, name: "Kotlin", icon: "/src/assets/svg/kotlin-original.svg", category: "mobile", proficiency: 4 },
-    { id: 23, name: "Android", icon: "/src/assets/svg/android-original.svg", category: "mobile", proficiency: 4 },
-    { id: 24, name: "Ionic", icon: "/src/assets/svg/ionic-original.svg", category: "mobile", proficiency: 4 },
-    { id: 25, name: "Dart", icon: "/src/assets/svg/dart-original.svg", category: "mobile", proficiency: 4 },
-    { id: 26, name: "Flutter", icon: "/src/assets/svg/flutter-original.svg", category: "mobile", proficiency: 4 },
+    { id: 22, name: "Kotlin", icon: "/assets/svg/kotlin-original.svg", category: "mobile", proficiency: 4 },
+    { id: 23, name: "Android", icon: "/assets/svg/android-original.svg", category: "mobile", proficiency: 4 },
+    { id: 24, name: "Ionic", icon: "/assets/svg/ionic-original.svg", category: "mobile", proficiency: 4 },
+    { id: 25, name: "Dart", icon: "/assets/svg/dart-original.svg", category: "mobile", proficiency: 4 },
+    { id: 26, name: "Flutter", icon: "/assets/svg/flutter-original.svg", category: "mobile", proficiency: 4 },
 
     // Tools
-    { id: 27, name: "Git", icon: "/src/assets/svg/git-original.svg", category: "tools", proficiency: 4 },
-    { id: 28, name: "GitHub", icon: "/src/assets/svg/github-original.svg", category: "tools", proficiency: 5 },
-    { id: 29, name: "Docker", icon: "/src/assets/svg/docker-original.svg", category: "tools", proficiency: 3 },
-    { id: 30, name: "AWS", icon: "/src/assets/svg/amazonwebservices-original-wordmark.svg", category: "tools", proficiency: 3 },
-    { id: 31, name: "Azure", icon: "/src/assets/svg/azure-original.svg", category: "tools", proficiency: 3 },
-    { id: 32, name: "Linux", icon: "/src/assets/svg/linux-original.svg", category: "tools", proficiency: 3 },
-    { id: 33, name: "TensorFlow", icon: "/src/assets/svg/tensorflow-original.svg", category: "tools", proficiency: 3 },
-    { id: 34, name: "Keras", icon: "/src/assets/svg/keras-original.svg", category: "tools", proficiency: 3 },
+    { id: 27, name: "Git", icon: "/assets/svg/git-original.svg", category: "tools", proficiency: 4 },
+    { id: 28, name: "GitHub", icon: "/assets/svg/github-original.svg", category: "tools", proficiency: 5 },
+    { id: 29, name: "Docker", icon: "/assets/svg/docker-original.svg", category: "tools", proficiency: 3 },
+    { id: 30, name: "AWS", icon: "/assets/svg/amazonwebservices-original-wordmark.svg", category: "tools", proficiency: 3 },
+    { id: 31, name: "Azure", icon: "/assets/svg/azure-original.svg", category: "tools", proficiency: 3 },
+    { id: 32, name: "Linux", icon: "/assets/svg/linux-original.svg", category: "tools", proficiency: 3 },
+    { id: 33, name: "TensorFlow", icon: "/assets/svg/tensorflow-original.svg", category: "tools", proficiency: 3 },
+    { id: 34, name: "Keras", icon: "/assets/svg/keras-original.svg", category: "tools", proficiency: 3 },
     // Design
-    { id: 35, name: "Figma", icon: "/src/assets/svg/figma-original.svg", category: "design", proficiency: 4 },
-    { id: 36, name: "Adobe XD", icon: "/src/assets/svg/xd-original.svg", category: "design", proficiency: 3 },
-    { id: 37, name: "Photoshop", icon: "/src/assets/svg/photoshop-original.svg", category: "design", proficiency: 3 },
-    { id: 38, name: "Illustrator", icon: "/src/assets/svg/illustrator-plain.svg", category: "design", proficiency: 3 },
-    { id: 39, name: "Sketch", icon: "/src/assets/svg/sketch-original.svg", category: "design", proficiency: 3 },
+    { id: 35, name: "Figma", icon: "/assets/svg/figma-original.svg", category: "design", proficiency: 4 },
+    { id: 36, name: "Adobe XD", icon: "/assets/svg/xd-original.svg", category: "design", proficiency: 3 },
+    { id: 37, name: "Photoshop", icon: "/assets/svg/photoshop-original.svg", category: "design", proficiency: 3 },
+    { id: 38, name: "Illustrator", icon: "/assets/svg/illustrator-plain.svg", category: "design", proficiency: 3 },
+    { id: 39, name: "Sketch", icon: "/assets/svg/sketch-original.svg", category: "design", proficiency: 3 },
 
   ];
 

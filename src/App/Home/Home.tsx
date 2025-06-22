@@ -8,7 +8,7 @@ import CodeLoader from "../../components/Loading/CodeLoader";
 import Experience from "./components/Experience";
 import TechStack from "./components/TechStack";
 import Portfolio from "./components/Portfolio";
-import Blog from "./components/Blog";
+//import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 
 export default function Home() {
