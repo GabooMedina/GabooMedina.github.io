@@ -37,11 +37,11 @@ const Portfolio: React.FC = () => {
       id: 1,
       title: "SaaS VetControl",
       description:
-        "A comprehensive admin dashboard for online stores with real-time analytics and inventory management.",
+        "A complete veterinary management system for handling clients, appointments, billing, and inventory in one streamlined dashboard.",
       image: "/assets/projects/sasVetControl.png",
       category: "web",
       technologies: ["React", "TypeScript", "PostgreSQL", "Chart.js"],
-      link: "https://example.com/project1",
+      link: "https://example.com/vetcontrol",
       github: "https://github.com/GabooMedina/VetControl-Frontend",
       featured: true,
     },
@@ -53,7 +53,7 @@ const Portfolio: React.FC = () => {
       image: "/assets/projects/cracksMovil.png",
       category: "mobile",
       technologies: ["Ionic", "Firebase", "Typescript"],
-      link: "https://example.com/project2",
+      link: "https://example.com/cracks",
       github: "https://github.com/GabooMedina/Cracks-AppMovil",
       featured: true,
     },
@@ -89,7 +89,7 @@ const Portfolio: React.FC = () => {
       image: "/assets/projects/ecuabus.png",
       category: "mobile",
       technologies: ["Ionic", "Typescript", "Firebase"],
-      link: "",
+      link: "https://example.com/ecuabus",
       github: "https://github.com/GabooMedina/EcuaBus",
       featured: false,
     },
@@ -112,8 +112,8 @@ const Portfolio: React.FC = () => {
         "BusGo is a desktop application for bus terminals that enables digital ticket sales, route and schedule management, seat availability control, and daily reporting.",
       image: "/assets/projects/busGo.png",
       category: "other",
-      technologies: ["Java","MySQL"],
-      link: "https://example.com/project1",
+      technologies: ["Java", "MySQL"],
+      link: "https://example.com/busgo",
       github: "https://github.com/GabooMedina/Software-Boletos",
       featured: false,
     },
@@ -124,7 +124,7 @@ const Portfolio: React.FC = () => {
         "Real-time dog and cat image classifier using TensorFlow.js, fully running in the browser. Just point your phone camera at a pet (real or photo), powered by a model trained in Python with TensorFlow",
       image: "/assets/projects/petVision.png",
       category: "ia",
-      technologies: ["Python","TensorFlow", "OpenCV"],
+      technologies: ["Python", "TensorFlow", "OpenCV"],
       link: "https://ringa-tech.com/exportacion/perros-gatos/",
       github: "https://github.com/GabooMedina/petVision",
       featured: false,
@@ -249,14 +249,17 @@ const Portfolio: React.FC = () => {
                 </div>
 
                 <div className="flex space-x-4">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-4 py-2 bg-[#00ff99] text-[#1c1c22] text-sm font-medium rounded-md hover:bg-transparent hover:border hover:border-[#00ff99] hover:text-[#00ff99] transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-[#00ff99]/50"
-                  >
-                    View Project
-                  </a>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-[#00ff99] text-[#1c1c22] text-sm font-medium rounded-md hover:bg-transparent hover:border hover:border-[#00ff99] hover:text-[#00ff99] transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-[#00ff99]/50"
+                    >
+                      View Project
+                    </a>
+                  )}
+
                   {project.github && (
                     <a
                       href={project.github}

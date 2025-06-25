@@ -2,7 +2,8 @@ import { useState } from "react";
 import { FaJs } from 'react-icons/fa';
 import { FaUniversity } from 'react-icons/fa';
 import PythonLogo from '../../../../public/assets/svg/python-logo-only.svg';
-import certificadoPython from "/src/assets/certificates/certificadoPython.png";
+import certificadoPython from "/src/assets/certificates/CursoPython.png";
+import certificadoJS from "/src/assets/certificates/CursoJS.png";
 
 
 export default function Education() {
@@ -62,7 +63,7 @@ export default function Education() {
         "Browser Debugging"
       ],
       icon: <FaJs className="text-yellow-400 text-4xl" />,
-      certificateImage: null // Puedes añadir la imagen si tienes certificado
+      certificateImage: certificadoJS
     },
 
   ];
@@ -171,7 +172,7 @@ export default function Education() {
                       alt={`Certificate for ${item.title}`}
                       className="rounded-lg shadow-md max-h-64 w-full object-contain mx-auto transition-transform duration-300 hover:scale-105"
                     />
-                    <p className="text-xs text-center mt-1 text-gray-400">Click para ampliar</p>
+                    <p className="text-xs text-center mt-1 text-gray-400">Click for full size</p>
                   </div>
                 )}
 
@@ -199,7 +200,7 @@ export default function Education() {
                 className="absolute -top-10 right-0 text-white hover:text-[#00ff99]"
                 onClick={() => setSelectedCertificate(null)}
               >
-                ✕ Cerrar
+                ✕ Close
               </button>
               <img
                 src={selectedCertificate}

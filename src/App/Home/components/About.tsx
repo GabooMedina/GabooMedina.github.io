@@ -79,12 +79,12 @@ export default function AboutSection() {
           </h1>
           <div className="w-20 h-1 bg-[#00ff99] shadow-[0_0_10px_rgba(0,255,153,0.7)] mx-auto lg:mx-0"></div>
           <p
-            className="text-base sm:text-lg md:text-xl leading-relaxed text-center lg:text-left max-w-2xl mx-auto lg:mx-0"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-justify text-center lg:text-left max-w-2xl mx-auto lg:mx-0"
             data-aos="fade-right"
           >
-            I'm Gabriel, a Full-Stack and Mobile Developer with 2 years of experience creating modern, scalable, 
-            and user-centric applications. I specialize in front-end, back-end, and mobile development, combining
-            clean code with intuitive design to deliver impactful digital experiences.
+            I'm Gabriel Medina, a Full-Stack and Mobile Developer with 2 years of experience building scalable, 
+            user-focused applications across web and mobile platforms.
+            I combine clean code with intuitive design to deliver seamless and impactful digital solutions.
           </p>
           {/* Short Info */}
           <div className="flex justify-center lg:justify-start">

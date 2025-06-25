@@ -13,11 +13,10 @@ export default function HeroSection() {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const roles = [
-    "Front-End Web Developer",
+    "Front-End Developer",
     "Back-End Developer",
     "Mobile App Developer",
-    "Data Analyst",
-    "UI/UX Designer",
+    "Data Analyst"
   ];
 
   // Early check for themeProvider
@@ -100,11 +99,9 @@ export default function HeroSection() {
             className="text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0"
           >
             <span className="font-medium">
-              Full-Stack Developer proficient in both front-end and back-end technologies,
+              Full-Stack & Mobile Developer,
             </span>{" "}
-            crafting seamless user experiences and building robust, scalable systems.
-            Let’s create impactful digital solutions together!
-
+            building seamless user experiences and scalable systems across front-end, back-end, and mobile platforms.
 
           </p>
 

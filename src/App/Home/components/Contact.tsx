@@ -285,10 +285,9 @@ export default function Contact() {
                       Email
                     </h4>
                     <a
-                      href="mailto:hello@example.com"
                       className="text-white hover:text-[#00ff99] transition-colors duration-300"
                     >
-                      hello@example.com
+                      gabomedina1007@gmail.com
                     </a>
                   </div>
                 </div>
